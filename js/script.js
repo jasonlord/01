@@ -1,4 +1,10 @@
 console.log('hey');
 
-var divCapture = document.getElementById('hey');
-if (divCapture) {console.log("divCapture" + divCapture.innerHTML)}
+
+var animation = lottie.loadAnimation({
+  container: document.getElementById('bm'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'bodyMovinAnimation01.json' // the path to the animation json
+});
